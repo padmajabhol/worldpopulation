@@ -2,37 +2,86 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  height: 100%;
+  display: grid;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(8px + 2vmin);
   color: white;
+  margin: 4vh;
+  padding: 4vh;
+  text-align: center;
+  border-radius: 4vh;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: calc(4vw + 2vmin);
+  text-shadow: 1px 8px 16px black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.graph-container {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  place-content: center;
+  grid-template-columns: 1fr 2fr 1fr;
+  font-size: calc(1vw + 1vmin);
+}
+
+.country-name {
+  text-align: right;
+  text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);
+  margin: 5%;
+}
+
+.country-population {
+  text-align: left;
+  text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);
+  margin: 5%;
+}
+
+.world-container {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  place-content: center;
+  grid-template-columns: 1fr 2fr 1fr;
+  font-size: calc(1vw + 1.5vmin);
+}
+
+big {
+  font-size: calc(1vw + 1.5vmin);
+  text-shadow: 1px 4px 8px black;
+  text-align: right;
+  margin: 5%;
+}
+
+.world-population {
+  text-align: left;
+  text-shadow: 1px 4px 8px black;
+  margin: 5%;
+}
+
+.graph-bar {
+  width: 100%;
+  color: #ffa500;
+  border: none;
+  background-color: transparent;
+  height: 4vw;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05) inset;
+}
+
+::-moz-progress-bar {
+  border-radius: 2px;
+  background-image: -moz-linear-gradient(left, #ffa500, darkorange);
+}
+
+::-webkit-progress-bar {
+  background-color: transparent;
+  border-radius: 2px;
+}
+::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(left, #ffa500, darkorange);
 }
